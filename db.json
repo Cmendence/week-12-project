@@ -1,9 +1,19 @@
 {
   "toDoList": [
     {
-      "taskName": "test2",
-      "details": "test2",
+      "taskName": "REMEMBER THE TITANS",
+      "details": "was a good movie",
+      "id": 1
+    },
+    {
+      "taskName": "Test batteries with tongue",
+      "details": "2 licks for good measure",
       "id": 2
+    },
+    {
+      "taskName": "testing enter",
+      "details": "I hope this works",
+      "id": 3
     }
   ]
 }
