@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4"
+  },
+  "name": "week-12-project",
+  "description": "��#\u0000 \u0000w\u0000e\u0000e\u0000k\u0000-\u00001\u00002\u0000-\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "crud.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

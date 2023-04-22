@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container bg-dark">
+    <div class="card">
+      <div class="card-body bg-info rounded">
+          <h2 class="text-center">DO IT NOW</h2>
+        <div class="row">
+            <div class="col-sm">
+        
+    <div class="form-group">
+    <label for="task-input">Task</label>
+    <input id="task-input" type="text" placeholder="New Task" class="form-control ">
+    <small id="task-empty" class="text-danger"></small>
+    </div>
+     </div>
+    <div class="col-sm">
+    <label for="details-input">Details</label>
+    <input id="details-input" type="text" placeholder="Details" class="form-control">
+    </div>
+   
+</div>
+    <button id="task-btn" class="btn btn-primary mt-2 mb-2">Add New Task</button>
+    <button id="save-btn" class="btn btn-success ms-2" style="display:none">Save</button>
+  </div>
+</div>
+
+    <table class="table table-info table-striped">
+      <thead>
+        <th>ID</th>
+        <th>Task</th>
+        <th>Details</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <!-- Jquery CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper CDN: For dropdowns, popovers, tooltips, etc-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Our script -->
+    <script src="crud2.js"></script>
+  </body>
+</html>
