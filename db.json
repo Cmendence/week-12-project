@@ -1,19 +1,29 @@
 {
   "toDoList": [
     {
-      "taskName": "REMEMBER THE TITANS",
-      "details": "was a good movie",
+      "taskName": "Hey Chris!",
+      "details": "Thanks for grading ma' stuff",
       "id": 1
     },
     {
-      "taskName": "Test batteries with tongue",
-      "details": "2 licks for good measure",
+      "taskName": "I really appreciate all your help",
+      "details": "Even if it feels like we don't talk much",
       "id": 2
     },
     {
-      "taskName": "testing enter",
-      "details": "I hope this works",
+      "taskName": "I still value all the times...",
+      "details": "Where you tell me how bad my stuff is",
       "id": 3
+    },
+    {
+      "taskName": "GET THE MONEY ",
+      "details": "BLACK BAG AT CORNER OF PARK & CENTRAL",
+      "id": 4
+    },
+    {
+      "taskName": "Play 1000x1000 tic-tac-toe",
+      "details": "Spoiler, nobody wins.",
+      "id": 5
     }
   ]
 }

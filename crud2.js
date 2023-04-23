@@ -1,6 +1,5 @@
 const URL = "http://localhost:3000/toDoList"
 
-
 $.get(URL).then(data => {
     data.map(task => {
         $('tbody').append(
@@ -10,7 +9,7 @@ $.get(URL).then(data => {
             <td>${task.taskName}</td>
             <td>${task.details}</td>
             <td>
-            <button onclick="editTask(${task.id})" class="btn btn-warning me-2">Edit</button>
+            <button onclick="editTask(${task.id})" class="btn btn-info me-2">Edit</button>
             <button onclick="deleteTask(${task.id})" class="btn btn-success">Done!</button>
             </td>
             </tr>
@@ -31,11 +30,11 @@ function isFieldValid(inputId, inputErrorId) {
      } else {
          document.getElementById(inputId).classList.remove('is-invalid');
        inputError.textContent = '';
-       console.log(`added class 'is-valid to input id:${inputId}`)
      return true
      }
  }
   
+
 
 
 document.getElementById('task-btn').addEventListener('click', ()=> {
@@ -47,7 +46,8 @@ document.getElementById('task-btn').addEventListener('click', ()=> {
                 details: document.getElementById('details-input').value })
     }
 
-})
+});
+
 
 
 
@@ -57,16 +57,10 @@ function deleteTask(id) {
   });
 }
 
-
-//add save button to HTML that does nothing
-//when edit button is clicked, retrieve info to inputs add event listener to save button
-//when save button is clicked, remove event listener from itself.
-//save button should replace the data in the fields of edit row clicked
-
 function editTask(id) {
     // Retrieve the task data to be edited
     $.get(`${URL}/${id}`).then(task => {
-      // Populate the form fields with the task data
+      // fill the form fields with the task data
       document.getElementById('task-input').value = task.taskName;
       document.getElementById('details-input').value = task.details;
       document.getElementById('save-btn').style.display = "block"
@@ -90,7 +84,7 @@ function editTask(id) {
             <td>${updatedTask.taskName}</td>
             <td>${updatedTask.details}</td>
             <td>
-              <button onclick="editTask(${updatedTask.id})" class="btn btn-warning me-2">Edit</button>
+              <button onclick="editTask(${updatedTask.id})" class="btn btn-info me-2">Edit</button>
               <button onclick="deleteTask(${updatedTask.id})" class="btn btn-success">Done!</button>
             </td>
           `);
@@ -101,11 +95,12 @@ function editTask(id) {
     });
   }
 
+
   document.addEventListener('keypress', function(event) {
     // If the user presses the "Enter" key on the keyboard
     if (event.key === 'Enter') {
       // Trigger the button element with a click
       document.getElementById('task-btn').click();
-      document.getElementById('task-input').focus();
+    
     }
   });
